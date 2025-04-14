@@ -6,4 +6,4 @@ f5-tts_infer-cli \
 --speed 1.0 \
 --vocoder_name vocos \
 --vocab_file data/your_training_dataset/vocab.txt \
---ckpt_file ckpts/your_training_dataset/model_last.pt \
+--ckpt_file ckpts/your_training_dataset/pretrained_model_500000.pt \

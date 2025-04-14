@@ -39,7 +39,7 @@ def parse_args():
     parser.add_argument("--max_samples", type=int, default=64, help="Max sequences per batch")
     parser.add_argument("--grad_accumulation_steps", type=int, default=1, help="Gradient accumulation steps")
     parser.add_argument("--max_grad_norm", type=float, default=1.0, help="Max gradient norm for clipping")
-    parser.add_argument("--epochs", type=int, default=50, help="Number of training epochs")
+    parser.add_argument("--epochs", type=int, default=15, help="Number of training epochs")
     parser.add_argument("--num_warmup_updates", type=int, default=300, help="Warmup updates")
     parser.add_argument("--save_per_updates", type=int, default=10000, help="Save checkpoint every X updates")
     parser.add_argument(
@@ -150,7 +150,7 @@ def main():
         )
         if args.finetune:
             if args.pretrain is None:
-                ckpt_path = str(cached_path("hf://hynt/F5-TTS-Vietnamese-100h/model_1000000.pt"))
+                ckpt_path = str(cached_path("hf://hynt/F5-TTS-Vietnamese-100h/model_500000.pt"))
             else:
                 ckpt_path = args.pretrain
     if args.finetune:

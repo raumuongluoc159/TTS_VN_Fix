@@ -86,8 +86,8 @@ if __name__ == "__main__":
     vocab_size_new = len(tokens_new) - len(tokens_pretrained)
 
     # Đường dẫn checkpoint
-    ckpt_path = str(cached_path("hf://SWivid/F5-TTS/F5TTS_Base/model_1200000.pt"))
-    new_ckpt_path = "ckpts/your_training_dataset/pretrained_model_1200000.pt"
+    ckpt_path = str(cached_path("hf://hynt/F5-TTS-Vietnamese-100h/model_500000.pt"))
+    new_ckpt_path = "ckpts/your_training_dataset/pretrained_model_500000.pt"
 
     # Mở rộng embedding
     expand_model_embeddings(ckpt_path, new_ckpt_path, num_new_tokens=vocab_size_new)

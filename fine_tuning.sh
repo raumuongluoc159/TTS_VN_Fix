@@ -8,7 +8,7 @@ log() {
 }
 
 # Tạo thư mục cần thiết, 
-DATASET_DIR="/content/ckpts/your_training_dataset"
+DATASET_DIR="data/your_training_dataset"
 mkdir -p "$DATASET_DIR"
 # Bắt buộc phải có thư mục data/your_dataset chứa các file .wav, file .txt tương ứng, các bạn tự xử lý
 mkdir -p data/your_dataset
